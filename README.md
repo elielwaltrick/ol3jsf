@@ -34,12 +34,39 @@ styleClass |
 
 <m:overviewMap /> |
 ----------------- |
-nenhum |
+nenhum atributo|
 
 <m:rotate /> |
 ------------ |
-nenhum |
+nenhum atributo |
 
 <m:zoomSlider /> |
 ---------------- |
-nenhum |
+nenhum atributo |
+
+## Exemplo de uso
+
+```html
+<m:map  id="map" 
+        jsVariable="map" 
+        centerLonLat="-49.314194, -28.530061" 
+        transformationSource="EPSG:4326" 
+        transformationTarget="EPSG:3857" 
+        zoom="11">
+
+  <m:wmsLayer name="Lotes" 
+              url="http://localhost:8181/geoserver/wms" 
+              layer="lotes"/>
+
+  <m:wmsLayer name="Edificações" 
+              url="http://localhost:8181/geoserver/wms" 
+              layer="edificacoes"/>
+
+  <m:osmLayer isBaseLayer="true" />			
+  <m:inputVectorLayer value="#{testeController.features}" /> 
+  <m:popup id="popup" styleClass="ol-popup"/>
+  <m:overviewMap />
+  <m:rotate />
+  <m:zoomSlider />
+</m:map>
+```

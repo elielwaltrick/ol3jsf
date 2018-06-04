@@ -1,7 +1,7 @@
 # ol3jsf
-Componentes JSF sobre a biblioteca OpenLayers 3
+JSF Components for OpenLayers 3
 
-## Componentes
+## Components
 
 <m:map /> |
 --------- |
@@ -34,17 +34,17 @@ styleClass |
 
 <m:overviewMap /> |
 ----------------- |
-nenhum atributo|
+no attributes|
 
 <m:rotate /> |
 ------------ |
-nenhum atributo |
+no attributes |
 
 <m:zoomSlider /> |
 ---------------- |
-nenhum atributo |
+no attributes |
 
-## Exemplo de uso
+## Example
 
 ```html
 <m:map  id="map" 
